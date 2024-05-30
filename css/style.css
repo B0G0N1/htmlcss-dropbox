@@ -3,4 +3,51 @@
     padding: 0px;
     box-sizing: border-box;
     border: 1px dashed black;
+
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* MAIN */
+.column-50{
+    width: 50%;
+}
+
+.row_header, .content_header{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.content_header{
+    margin: 5px 0px;
+    font-size: 20px;
+}
+
+.right{
+    justify-content: right;
+}
+
+header ul{
+    list-style-type: none;
+}
+
+header li{
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+header a{
+    text-decoration: none;
+    color: inherit;
+}
+
+header button{
+    background-color: #0061ff;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
 }
