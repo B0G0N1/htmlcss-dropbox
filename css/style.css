@@ -2,15 +2,15 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 
 }
 
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Roboto", Helvetica, sans-serif;
 }
 
-/* MAIN */
+/* FOOTER */
 .column-50{
     width: 50%;
 }
@@ -22,8 +22,8 @@ body{
 }
 
 .content_header{
-    margin: 5px 0px;
-    font-size: 20px;
+    padding: 20px 10px;
+    font-size: 15px;
 }
 
 .right{
@@ -47,7 +47,66 @@ header a{
 header button{
     background-color: #0061ff;
     color: white;
-    font-size: 20px;
-    padding: 10px;
+    font-size: 15px;
+    padding: 5px 10px;
     border: none;
+}
+
+#logo{
+    margin-right: 10px;
+}
+
+/* MAIN */
+.azure{
+    background-color: #b4d0e7;
+}
+
+.container_hero{
+    width: 80%;
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+.content_title{
+    padding: 20px 0px;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.row_hero-description{
+    display: flex;
+}
+
+.column-40{
+    width: 40%;
+}
+
+.column-60{
+    width: 60%;
+}
+
+.container_hero button{
+    width: 200px;
+    background-color: #0061ff;
+    border: none;
+    color: white;
+    padding: 10px 5px;
+    margin: 30px 0px;
+}
+
+.container_hero i{
+    font-size: 40px;
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+
+.content_image{
+    position: relative;
+}
+
+#jumbo{
+    width: 700px;
+    position: absolute;
+    left: -20px;
 }
