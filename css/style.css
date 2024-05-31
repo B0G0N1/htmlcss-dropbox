@@ -56,20 +56,22 @@ header button{
     margin-right: 10px;
 }
 
+
 /* MAIN */
+
+/* Container Hero */
 .azure{
     background-color: #b4d0e7;
 }
 
 .container_hero{
-    width: 80%;
     max-width: 1200px;
     margin: 0px auto;
 }
 
 .content_title{
-    padding: 20px 0px;
-    font-size: 40px;
+    padding: 30px 0px;
+    font-size: 50px;
     font-weight: bold;
     text-align: center;
 }
@@ -98,7 +100,11 @@ header button{
 .container_hero i{
     font-size: 40px;
     margin-top: 60px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.content_description{
+    margin-left: 40px;
 }
 
 .content_image{
@@ -108,5 +114,82 @@ header button{
 #jumbo{
     width: 700px;
     position: absolute;
-    left: -20px;
+}
+
+/* Container Pricing */
+.container_pricing{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.row_billing{
+    margin-top: 150px;
+}
+
+.content_billing h2{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.content_billing ul{
+    list-style-type: none;
+}
+
+.content_billing li{
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+#full_button{
+    height: 20px;
+    width: 20px;
+    background-color: #0061ff;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#white_button{
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    border-radius: 100%;
+    z-index: 1;
+}
+
+#empty_button{
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 100%;
+}
+
+.column-33{
+    width: calc(100% / 3);
+}
+
+.row_pricing{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 300px;
+}
+
+.content_pricing{
+    height: 500px;
+    margin-right: 20px;
+    border: 1px solid black;
+}
+
+.billing_type{
+    text-align: center;
+    background-color: pink;
+    padding: 10px 0px;
+    border-bottom: 1px solid black;
+}
+
+.billing_info{
+    padding: 0px 20px;
 }
