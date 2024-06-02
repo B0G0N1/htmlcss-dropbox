@@ -2,7 +2,6 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    border: 1px dashed black;
 
 }
 
@@ -178,14 +177,17 @@ header button{
 }
 
 .content_pricing{
-    height: 500px;
-    margin-right: 20px;
+    height: 100%;
+    margin: 10px 20px 30px 0px;
     border: 1px solid black;
+}
+
+.container_pricing span{
+    margin-left: 5px;
 }
 
 .billing_type{
     text-align: center;
-    background-color: pink;
     padding: 10px 0px;
     border-bottom: 1px solid black;
 }
@@ -196,23 +198,35 @@ header button{
 
 .billing_features{
     display: flex;
+    flex-wrap: nowrap;
     flex-direction: row;
-    align-items: center;
+    align-items: baseline;
+}
+
+.billing_features p{
+    padding-left: 10px;
+}
+
+.billing_info h2{
+    margin-top: 30px;
 }
 
 .billing_info p{
-    margin: 20px 0px;
-}
-
-.billing_info button{
-    background-color: #0061ff;
-    color: white;
-    font-size: 15px;
-    padding: 15px;
-    border: none;
+    margin: 10px 0px;
 }
 
 .billing_info hr{
-    border: 1px solid grey;
+    border: 1px solid lightgrey;
     width: 30%;
+    margin: 30px 0px;
+}
+
+.billing_info button{
+    width: 100%;
+    background-color: #0061ff;
+    color: white;
+    font-size: 15px;
+    margin: 20px 0px;
+    padding: 15px;
+    border: none;
 }
