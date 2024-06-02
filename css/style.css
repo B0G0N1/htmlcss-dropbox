@@ -2,7 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    /* border: 1px dashed black; */
+    border: 1px dashed black;
 
 }
 
@@ -192,4 +192,27 @@ header button{
 
 .billing_info{
     padding: 0px 20px;
+}
+
+.billing_features{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.billing_info p{
+    margin: 20px 0px;
+}
+
+.billing_info button{
+    background-color: #0061ff;
+    color: white;
+    font-size: 15px;
+    padding: 15px;
+    border: none;
+}
+
+.billing_info hr{
+    border: 1px solid grey;
+    width: 30%;
 }
