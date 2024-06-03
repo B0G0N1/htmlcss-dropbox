@@ -247,6 +247,7 @@ header button{
 
 .row_partner{
     display: flex;
+    margin-top: 100px;
 }
 
 .column-70{
@@ -305,4 +306,87 @@ header button{
 
 .content_operations p{
     padding: 20px 0px;
+}
+
+
+/* QUARTO CONTAINER (CUSTOMERS) */
+.row_customers{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.square-33{
+    /* -20px per la sidebar ? */
+    width: calc((100vw - 20px) / 3);
+    height: calc((100vw - 20px) / 3);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.square-50{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square-50 img{
+    width: 50%;
+    filter: invert(1);      
+}
+
+.row_customers .square-50:first-child
+{
+    border: 10px solid #d1e9cd;
+}
+
+.content_customers{
+    background-color: #f5f5f5;
+    padding: 30px;
+}
+
+.content_customers h2{
+    font-size: 50px;
+}
+
+.content_customers hr{
+    width: 30%;
+    margin: 20px 0px;
+    border: 1px solid grey;
+}
+
+#cit{
+    margin: 20px 0px;
+}
+
+
+/* Square Colors */
+.lightgreen{
+    background-color: #a2d39b;
+}
+
+.bloodred{
+    background-color: #61082b;
+}
+
+.skyblue{
+    background-color: #0093ce;
+}
+
+.red{
+    background-color: #ff1c1c;
+}
+
+.darkred{
+    background-color: #d5001f;
+}
+
+.darkblue{
+    background-color: #0d2481;
+}
+
+.yellow{
+    background-color: #ffd830;
 }
