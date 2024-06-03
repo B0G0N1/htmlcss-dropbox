@@ -390,3 +390,23 @@ header button{
 .yellow{
     background-color: #ffd830;
 }
+
+
+/* QUINTO CONTAINER (BRING DROPBOX) */
+.container_bring-dropbox{
+    max-width: 800px;
+    margin: 0px auto;
+}
+
+.content_bring-dropbox{
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0px;
+    color: #651534;
+}
+
+.content_bring-dropbox button{
+    padding: 10px 20px;
+    color: grey;
+    border: grey;
+}
