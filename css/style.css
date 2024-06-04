@@ -9,6 +9,15 @@ body{
     font-family: "Roboto", Helvetica, sans-serif;
 }
 
+button:hover{
+    transform: scale(1.1);
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
 /* FOOTER */
 .column-50{
     width: 50%;
@@ -16,13 +25,22 @@ body{
 
 .row_header, .content_header{
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
 .content_header{
-    padding: 15px;
+    padding: 10px;
     font-size: 15px;
+    height: 50px;
+    background-color: white;
+    border-bottom: 1px solid gray;
 }
 
 .right{
@@ -38,9 +56,27 @@ header li{
     margin: 0px 10px;
 }
 
-header a{
+/* Menu a tendina */
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: white;
+    margin-top: 20px;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content li a{
+    padding: 10px 0px;
     text-decoration: none;
-    color: inherit;
+    display: block;
+    text-align: left;
+}
+
+.content_header li:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
 }
 
 header button{
@@ -62,8 +98,12 @@ header button{
 }
 
 .container_hero{
-    max-width: 1000px;
+    max-width: 1000px;;
     margin: 0px auto;
+}
+
+.row_hero-title{
+    margin-top: 50px;
 }
 
 .content_title{
@@ -108,9 +148,14 @@ header button{
     position: relative;
 }
 
-#jumbo{
-    width: 600px;
+.content_image img{
+    width: 700px;
     position: absolute;
+}
+
+.fa-solid.fa-arrow-down:hover{
+    transition: transform 0.3s;
+    transform: scale(1.5);
 }
 
 /* SECONDO CONTAINER (PRICING) */
@@ -337,9 +382,12 @@ header button{
     filter: invert(1);      
 }
 
-.row_customers .square-50:first-child
-{
+.square-33:first-child .square-50:first-child{
     border: 10px solid #d1e9cd;
+}
+
+.square-50:hover{
+    border: 10px solid rgba(255, 255, 255, 0.5);
 }
 
 .content_customers{
